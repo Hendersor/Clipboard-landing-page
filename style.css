@@ -246,7 +246,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: minmax(100%, 100%);
-    grid-template-rows: repeat(2 minmax(1fr,1fr));
+    grid-template-rows: minmax(250px, 250px) minmax(100vh,100vh);
     grid-template-areas: 
     "info-3"
     "icons";
@@ -254,10 +254,10 @@ body{
 
 .workflow .info-3{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    margin-bottom: 100px;
 }
 
 .info-3 h1{
@@ -271,4 +271,50 @@ body{
     font-family: 'Bai Jamjuree', sans-serif;
     color: var(--grayish-blue);
     font-size: 1.0rem;
+    padding:0px 35px 0 35px;
+    text-align: center;
+    margin-top: 20px;
 }
+
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.icons section{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.icons section span{
+    align-self: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.icons section img{
+    align-self: center;
+}
+
+
+.icons section h1, p{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.icons section h1{
+    font-size: 1.5rem;
+}
+
+.icons section p{
+    font-size: 1.0rem;
+    color: var(--grayish-blue);
+    margin:0px 25px 0px 25px;
+    line-height: 25px;
+    text-align: center;
+    margin-top:20px;
+}
+
+
