@@ -1,6 +1,6 @@
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 :root{
@@ -16,12 +16,14 @@ body{
     font-size: 62.5%;
 }
 
+
 .download{
+    justify-content: center;
     margin: 0 auto;
     height: 100vh;
-    width: 375px;
+    width: 100vw;
     display: grid;
-    grid-template-columns: minmax(100%, 100%);
+    grid-template-columns: minmax(100vw, 100vw);
     grid-template-rows: repeat(3 minmax(1fr,1fr));
     grid-template-areas: 
     "logo"
@@ -36,6 +38,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
 .logo div{
@@ -55,12 +58,13 @@ body{
     align-items: center;
     flex-direction: column;
     font-family: 'Bai Jamjuree', sans-serif;
+    width: 100vw;
 }
-
 
 .download .info{
     grid-area: info;
-    text-align: center; 
+    text-align: center;
+    width: 100vw; 
 }
 
 .info h1{
@@ -105,16 +109,17 @@ body{
 
 .track{
     margin: 0 auto;
-    width: 375px;
-    height: 100vh;
+    width: 100vw;
+    height: 95vh;
     display: grid;
     grid-template-columns: minmax(100%, 100%);
-    grid-template-rows: repeat(3 minmax(350px,350px));
+    grid-template-rows: minmax(200px,200px) minmax(220px,220px);
     grid-template-areas: 
     "info-1"
-    "img-1"
-    "perks";
+    "img-1";
     grid-gap: 30px;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 .info-1, .perks{
@@ -126,22 +131,28 @@ body{
     
 }
 
+.perks{
+    margin-bottom: 40px;
+}
+
+
 .info-1{
     grid-area: info-1;
     height: 225px;
+    width: 100vw;
 }
 
 .perks{
-    grid: perks;
+    grid-area: perks;
 }
 
 .card{
     grid-area: img-1;
-    width: 100%;
- 
+    width: 100vw;
+    
 }
 .img-1{
-    object-fit:scale-down;
+    object-fit:contain;
     object-position: center;
     width: 100%;
     height: 100%;
@@ -163,6 +174,7 @@ body{
 .perks{
     width: 100vw;
     height: 500px;
+    margin: 0 auto;
 }
 
 .perks h1{
@@ -173,4 +185,90 @@ body{
     font-size: 1.0rem;
     padding: 0 30px 0 30px;
     color: var(--grayish-blue);
+    margin-top: 15px;
+}
+
+
+
+
+/*3th parth*/
+
+.access-2{
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: minmax(100%, 100%);
+    grid-template-rows: repeat(2 minmax(1fr ,1fr));
+    grid-template-areas: 
+    "info-2"
+    "card-2";
+}
+
+.access-2 .info-2{
+    grid-area: info-2;
+    font-family: 'Bai Jamjuree', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-2 h1{
+    font-size: 1.5rem;
+    padding: 0px 35px 0px 35px;
+    text-align: center;
+}
+
+.info-2 p{
+    font-size: 1.0rem;
+    line-height: 25px;
+    color: var(--grayish-blue);
+    text-align: center;
+    padding: 0px 35px 0px 35px;
+
+}
+
+.access-2 .card-2{
+    grid-area: card-2;
+}
+
+.card-2 .img-2{
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*4th part*/
+
+.workflow{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(100%, 100%);
+    grid-template-rows: repeat(2 minmax(1fr,1fr));
+    grid-template-areas: 
+    "info-3"
+    "icons";
+}
+
+.workflow .info-3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.info-3 h1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    padding: 0px 35px 0 35px;
+}
+
+.info-3 p{
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--grayish-blue);
+    font-size: 1.0rem;
 }
