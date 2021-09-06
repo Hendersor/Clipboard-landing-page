@@ -195,7 +195,7 @@ body{
 
 .access-2{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: minmax(100%, 100%);
     grid-template-rows: repeat(2 minmax(1fr ,1fr));
@@ -211,6 +211,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    grid-area: info-2;
 }
 
 .info-2 h1{
@@ -225,7 +226,6 @@ body{
     color: var(--grayish-blue);
     text-align: center;
     padding: 0px 35px 0px 35px;
-
 }
 
 .access-2 .card-2{
@@ -243,10 +243,10 @@ body{
 
 .workflow{
     width: 100vw;
-    height: 100vh;
+    height: 170vh;
     display: grid;
     grid-template-columns: minmax(100%, 100%);
-    grid-template-rows: minmax(250px, 250px) minmax(100vh,100vh);
+    grid-template-rows: minmax(115px, 115px);
     grid-template-areas: 
     "info-3"
     "icons";
@@ -254,10 +254,10 @@ body{
 
 .workflow .info-3{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 100px;
+    grid-area: info-3;
 }
 
 .info-3 h1{
@@ -273,7 +273,7 @@ body{
     font-size: 1.0rem;
     padding:0px 35px 0 35px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 
@@ -282,16 +282,16 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 .icons section{
  display: flex;
  flex-direction: column;
  justify-content: center;
+ margin-bottom: 20px;
 }
 
 .icons section span{
     align-self: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .icons section img{
@@ -306,6 +306,7 @@ body{
 
 .icons section h1{
     font-size: 1.5rem;
+    margin-top:30px;
 }
 
 .icons section p{
@@ -318,3 +319,13 @@ body{
 }
 
 
+/*5th part*/
+.companies{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
