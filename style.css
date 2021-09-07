@@ -329,3 +329,52 @@ body{
     align-items: center;
     margin-top: 10px;
 }
+
+
+/*6th Part*/
+
+.download-2{
+    width: 100vw;
+    height: 90vh;
+    font-family: 'Bai Jamjuree', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-2 h1{
+    font-size: 1.5rem;
+    padding: 0px 35px 0px 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.download-2 p{
+    font-size: 1.0rem;
+    color: var(--grayish-blue);
+    line-height: 25px;
+    padding: 0px 35px 40px 35px;
+}
+
+
+.download-2 button{
+    width: 315px;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 23px;
+}
+
+.download-2 .button-3{
+    background-color: var(--strong-cyan);
+    color: white;
+}
+
+.download-2 .button-4{
+    background-color: var(--light-blue);
+    color: white;
+}
